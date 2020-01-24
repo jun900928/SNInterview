@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "MyfirstPod"
   spec.version      = "1.0.0"
-  spec.summary      = "A short description of MyfirstPod. Need modify"
+  spec.summary      = "MyfirstPod. Need modify, can be change "
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -62,7 +62,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
+  spec.platform     = :ios
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/jun900928/SNInterview.git", :tag => 1.0.0 }
+  spec.source       = { :git => "https://github.com/jun900928/SNInterview.git", :tag => spec.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
