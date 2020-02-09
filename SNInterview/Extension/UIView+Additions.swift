@@ -21,8 +21,9 @@ extension UIView {
     
     @discardableResult
     func fromNib<T : UIView>() -> T? {
-        guard let contentView = Bundle(for: type(of: self))
-            .loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?.first as? T else {
+        let bundle = Bundle(for: type(of: self))
+        let name = String(describing: type(of: self))
+        guard let contentView = bundle.loadNibNamed(name, owner: self, options: nil)?.first as? T else {
                 return nil
         }
         return contentView
